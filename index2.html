@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <div class="form">
+      <div class="contact-info">
+        <h3 class="title">Let's get in touch</h3>
+        <div class="info">
+          <div class="information">
+            <a href="#"><i class="fa-solid fa-envelope" style="color: #134b70;"></i></a>
+            <p>Cairo, Egypt</p>
+          </div>
+          <div class="information">
+            <a href="#"><i class="fa-solid fa-location-dot" style="color: #134b70;"></i></a>
+            <p>hanenhany96@gmail.com</p>
+          </div>
+          <div class="information">
+            <a href="#"><i class="fa-solid fa-phone" style="color: #134b70;"></i></a>
+            <p>01022157987</p>
+          </div>
+        </div>
+        <div class="social-media">
+          <p>Connect with us:</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form" id="form">
+        <form action="index.html" autocomplete="off">
+          <h3 class="title">Contact us</h3>
+          <div class="input-container">
+            <input type="text" name="name" class="input" id="username" />
+            <label for="username">Username</label>
+            <span class="error"></span> 
+            <span>Username</span>
+          </div>
+          <div class="input-container">
+            <input type="text" name="email" class="input" id="email" />
+            <label for="email">Email</label>
+            <span class="error"></span> 
+            <span>Email</span>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" id="phone" />
+            <label for="phone">Phone</label>
+            <span class="error"></span> 
+            <span>Phone</span>
+          </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input" id="message"></textarea>
+            <label for="message">Message</label>
+            <span class="error"></span> 
+            <span>Message</span>
+          </div>
+          <input type="submit" value="Send" class="btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="contact.js"></script>
+</body>
+</html>

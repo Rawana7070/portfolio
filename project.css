@@ -1,0 +1,128 @@
+
+ /* Start Global Rules */
+ * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+/* body {
+    font-family: 'Work Sans', sans-serif;
+    
+} */
+
+
+.project .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+   }
+
+
+/* End Global Rules */
+/* Start Project */
+.project{
+    background-color:#ececec ;
+    margin-top: 1rem;
+}
+.project  .row {
+   display: grid;
+   grid-template-columns:  repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.project  .box {
+  width: 90%;
+  min-height: 470px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+
+  padding: 15px;
+  border-radius: 15px;
+
+  box-shadow:
+inset 5px 5px 5px  rgba(0,0,0,0.05),
+inset -5px -5px 5px rgba(255,255,255,0.5),
+5px 5px 5px  rgba(0,0,0,0.05),
+-5px -5px 5px rgba(255,255,255,0.5);
+}
+
+.project  .box .card {
+  width: 100%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.project  .card{
+   border-radius: 15px;
+   overflow: hidden;
+   height: 100%;
+   border: none;
+   transition: .3s;
+}
+.project  .card-body {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   border: none;
+   
+}
+.project  .card-body .info{
+   margin-bottom: 50px;
+}
+
+.project  .info .card-title {
+   font-size: 25px;
+   
+}
+.project  .card-title .card-text{
+   color: #7c7979;
+}
+
+
+.project  .btn-primary {
+   width: fit-content;
+}
+.project  .buttn i{
+font-size: 30px;
+transition: .3s;
+}
+.project  .buttn i:hover{
+   transition: .3s;
+   color: black;
+   transform: scale(1.1);
+}
+
+.project  .box:hover .card{
+   transform: translateY(-35px);
+   transition: .3s;
+}
+
+
+/* End Project */
+
+/* Start Media Quary */
+
+
+@media (max-width:768px){
+    .project  .row {
+        display: grid;
+       grid-template-columns:  repeat(auto-fill, minmax(100%, 1fr));
+         
+     }
+    .project  .box {
+       width: 85%;
+   }
+   .project  .card-title{
+   font-size: 20px;
+}
+.project  .card-text {
+   font-size: 15px;
+}
+
+}
+/* End Media Quary */
+ 
